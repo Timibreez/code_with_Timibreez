@@ -74,7 +74,7 @@ print(result)
 Using the truth values to solve the
 conditional statements practice above
 '''
-points = 174  # use this as input for your submission
+points = 250  # use this as input for your submission
 
 # establish the default prize value to None
 prize = None
@@ -94,6 +94,8 @@ else:
 # use the truth value of prize to assign result to the correct prize
 if prize:
     result = 'Congratulations! You won a {}!'.format(prize)
+else:
+    result = 'Oh dear, no prize this time.'
 
 
 print(result)
