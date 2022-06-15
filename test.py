@@ -1,4 +1,4 @@
-"""Conditional Statments Practice"""
+"""Conditional Statements Practice"""
 points = 174
 
 if points <= 50:
@@ -67,5 +67,33 @@ elif state == 'NY':
     result = "Since you're from {}, your total cost is {}.".format(
         state,
         total_cost)
+
+print(result)
+
+'''
+Using the truth values to solve the
+conditional statements practice above
+'''
+points = 174  # use this as input for your submission
+
+# establish the default prize value to None
+prize = None
+
+
+# use the points value to assign prizes to the correct prize names
+if points <= 50:
+    prize = 'wooden rabbit'
+elif points <= 150:
+    prize = prize
+elif points <= 180:
+    prize = 'wafer-thin mint'
+else:
+    prize = 'penguin'
+
+
+# use the truth value of prize to assign result to the correct prize
+if prize:
+    result = 'Congratulations! You won a {}!'.format(prize)
+
 
 print(result)
